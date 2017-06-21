@@ -1,0 +1,53 @@
+/*----------------------------------------*/
+/* Basic Setup */
+/*----------------------------------------*/
+
+/*-----------Base Color : #2980b9---------*/
+
+
+html {
+    font-family: 'Lato', 'Chivo', sans-serif;
+    font-size: 22px;
+    text-rendering: optimizeLegibility
+}
+
+body {
+/*    padding-top: 70px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Chivo', sans-serif;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+}
+
+/*----------------------------------------*/
+/* Reuseable Component */
+/*----------------------------------------*/
+
+
+/*----------------------------------------*/
+/* Header Section */
+/*----------------------------------------*/
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(/images/bram-naus-200967.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.navbar-default {
+     background-color: transparent; 
+     border-color: transparent; 
+}
+nav {
+    padding-top: 10px;
+}
+nav a {
+    font-size: 130%;
+    color: #fff !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
