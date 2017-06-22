@@ -12,13 +12,16 @@
     
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Chivo|Lato" rel="stylesheet"> 
+    
+    <!--Icons-->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 
 
 </head>
 <body>
    
-   <section class="header">
+   <section id="header">
        <header>
            <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -48,24 +51,184 @@
     
        </header>
        
-       <div class="row">
-           <div class="col-xs-12">
-               <div class="header-text">
-                  <div class="text-center">
-                      <h1>I am Mohib</h1>
-                  </div>
-                   
+        <div class="header-content">
+            <div class="header-text">
+                <!--Text impelement by js-->
+                <div class="print"></div>
+            </div>
+            
+            <div class="header-button">
+                <div class="btn-grp">
+                    <ul>
+                        <li><a href=""><span>CV</span></a></li>
+                        <li><a href=""><i class="icon ion-social-github"></i></a></li>
+                    </ul>                                                     
+                </div>
+                <div class="btn-def">
+                    <a href="">Hire Me</a>
+                </div>
+            </div>
+        </div>
+                  
+
+   </section>
+   
+   <section id="about">
+      <div class="container">
+          <div class="row">
+               <div class="col-xs-12">    
+                   <div class="section-header text-center">
+                       <h1>About Me</h1>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-5">
+                   <img src="https://avatars3.githubusercontent.com/u/20377400?v=3&u=a3bf2ea4ac4b8d65d8747733d83b4dc6d6b2af2c&s=400" class="img-responsive pull-right" alt="My Photo">
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-7">
+                   <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, officia doloremque est hic voluptas obcaecati sint, quaerat praesentium sed eligendi amet quas. Vitae voluptatibus saepe, reiciendis quisquam. Modi facere, perspiciatis.</p>
+               </div>
+           </div>
+      </div>
+   </section>
+   
+   <section id="skill">
+       <div class="container">
+          
+          <div class="row">
+               <div class="col-xs-12">    
+                   <div class="section-header text-center">
+                       <h1>My Skills</h1>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="row" id="skills">
+
+            <div class="col-sm-12 col-md-6 col-md-push-6">
+                <div class="skillbar clearfix " data-percent="60%">
+                    <div class="skillbar-title" style="background: #333333;"><span>Laravel</span></div>
+                    <div class="skillbar-bar" style="background: #525252;"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #27ae60;"><span>Bootstrap</span></div>
+                    <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="70%">
+                    <div class="skillbar-title" style="background: #124e8c;">
+                    <span>SemanticUi</span></div>
+                    <div class="skillbar-bar" style="background: #4288d0;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- End Skill Bar -->
+            </div> <!-- end of column 2 -->
+
+            <div class="col-sm-12 col-md-6 col-md-pull-6">
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                    <div class="skillbar-bar" style="background: #e67e22;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="50%">
+                    <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+                    <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="60%">
+                    <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                    <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="20%">
+                    <div class="skillbar-title" style="background: #8e44ad;"><span>Javascript</span></div>
+                    <div class="skillbar-bar" style="background: #9b59b6;"></div>
+                    <div class="skill-bar-percent">20%</div>
+                </div> <!-- End Skill Bar -->
+            </div> <!-- end of column 1 -->
+        </div>
+       </div>
+   </section>
+   
+   <section id="process">
+       <div class="container">
+          
+           <div class="row">
+               <div class="col-xs-12">    
+                   <div class="section-header text-center">
+                       <h1>The Process</h1>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-search"></i>Discovery Phase</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-compose"></i>Planning Stage</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-chatbubble-working"></i>Planning Stage</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-android-color-palette"></i>Wireframing</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-code-working"></i>Design & Development</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
+               </div>
+               
+               <div class="col-xs-12 col-sm-6 col-md-4">
+                   <div class="process">
+                      <h3><i class="icon ion-paper-airplane"></i>Launch</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem quam dolore consectetur.</p>     
+                   </div>
                </div>
            </div>
        </div>
    </section>
    
-   <section class="about">
-       <div class="row">
-           <div class="col-xs-12 col-md-6">    
-               <div class="section-header">
-                   <h1>About Me</h1>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sequi similique, recusandae repellendus. Ad, dignissimos odit perferendis fuga quibusdam itaque rerum magni, voluptate illo facilis laborum? Ea architecto tempore, ab.</p>
+   <section id="portfolio">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-12">    
+                   <div class="section-header text-center">
+                       <h1>Portfolio</h1>
+                   </div>
                </div>
            </div>
        </div>
@@ -73,9 +236,12 @@
     
     
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="/js/typed.js"></script>
+    <script src="/js/master.js"></script>
 </body>
 </html>

@@ -17,26 +17,53 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Chivo', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
-
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 110%;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
 a {
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+}
+section {
+    margin-bottom: 80px;
+}
+
 
 /*----------------------------------------*/
 /* Reuseable Component */
 /*----------------------------------------*/
-
-
+.section-header h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.section-header h1:after {
+    content : '';
+    display: block;
+    border: 2px solid #4ea1d8;
+    width: 300px;
+    margin: 10px auto;
+    margin-bottom: 50px;
+        
+}
 /*----------------------------------------*/
 /* Header Section */
 /*----------------------------------------*/
-.header {
+#header {
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(/images/bram-naus-200967.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
 .navbar-default {
      background-color: transparent; 
@@ -50,4 +77,181 @@ nav a {
     color: #fff !important;
     font-weight: 400;
     text-transform: uppercase;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-text {
+    height: 60px;
+}
+.print {
+    text-align: center;
+    font-size: 300%;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.header-button {
+    width: 400px;
+    margin: 30px auto;
+}
+.btn-grp {
+    width: 200px;
+    height: 62px;
+    padding: 3px 10px;
+    border: none;
+    background: #2980b9;
+    float: left;
+}
+.btn-grp ul li {
+    list-style: none;
+    float: left;
+}
+.btn-grp ul li:hover {
+    cursor: pointer;
+}
+.btn-grp a {
+    margin: 0px 10px;
+    font-size: 150%;
+}
+.btn-grp span {
+    border-radius: 50px;
+    background: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px 4px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    position: relative;
+    top: 17px;
+    left: -10px;
+}
+.btn-grp a i {
+    font-size: 200%;
+    color: #fff;
+}
+.btn-def { 
+    width: 180px;
+    float: left;
+    padding: 20px 50px;
+    border: 1px solid #2980b9;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background 0.2s;
+}
+.btn-def:hover {
+    background: #236d9d;
+    cursor: pointer;
+    color : #fff;
+}
+.btn-def:hover >  a {
+    color : #fff;
+}
+/*----------------------------------------*/
+/* About Section */
+/*----------------------------------------*/
+#about img {
+    width: 50%;
+}
+/*----------------------------------------*/
+/* Skill Section */
+/*----------------------------------------*/
+#skill {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(/images/markus-spiske-221494.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+}
+#skill h1 {
+    color: #fff;
+}
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+/*----------------------------------------*/
+/* Process Section */
+/*----------------------------------------*/
+.process {
+    border: 1px solid #e6e6e6;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+.process i {
+    margin-right: 5px;
+    color: #2980b9;
 }
