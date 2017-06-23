@@ -404,9 +404,32 @@ width:110px;
           transition-property:         transform, opacity;
 }
   
-  
-/* responsive media queries */
-
-@media (max-width: 768px) {
- 
+/*----------------------------------------*/
+/* Service Section */
+/*----------------------------------------*/ 
+#service p {
+    color: #7e7e7e;
+}
+.service-item {
+    transition: background .2s;
+}
+.service-item:hover .icon-bg {
+    background: #000;
+}
+.service-item:hover .icon-bg i {
+    color: #fff;
+}
+.icon-bg {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 40%;
+    padding-top: 10px;
+    transition: background .5s;
+}
+.icon-bg i {
+    font-size: 300%;
+    transition: color .5s;
 }
