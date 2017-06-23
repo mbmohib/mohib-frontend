@@ -9,6 +9,7 @@
     <!--CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Chivo|Lato" rel="stylesheet"> 
@@ -222,7 +223,7 @@
        </div>
    </section>
    
-   <section id="portfolio">
+   <section id="portfolio" class="clearfix">
        <div class="container">
            <div class="row">
                <div class="col-xs-12">    
@@ -231,6 +232,136 @@
                    </div>
                </div>
            </div>
+           
+           <div class="row">
+                <div id="portfolio-nav">
+                    <div id="filters" class="button-group center-block">
+                      <button class="btn-def" data-filter="*">All</button>
+                      <button class="btn-def" data-filter=".laravel">Laravel</button>
+                      <button class="btn-def" data-filter=".wordpress">Wordpress</button>
+                      <button class="btn-def" data-filter=".bootstrap">Bootstrap</button>
+                      <button class="btn-def" data-filter=".laravel-Package">Laravel Package</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+          
+        <div class="container-fluid no-gutter">
+
+            <div id="posts" class="row">
+                <div class="item laravel col-xs-12 col-sm-6 col-md-3">
+                    <div class="item-wrap">
+                       <a href="">
+                            <img class="img-responsive" src="//lorempixel.com/600/600">
+                            <div class="img-overlay">
+                                <h3><strong>Name: </strong>Personal Website</h3>
+                                <h3><strong>Stack: </strong>Laravel, Semantic</h3>
+                                <a href=""><i class="icon ion-link"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="item laravel col-xs-12 col-sm-6 col-md-3">
+                    <div class="item-wrap">
+                       <a href="">
+                            <img class="img-responsive" src="//lorempixel.com/600/600">
+                            <div class="img-overlay">
+                                <h3><strong>Name: </strong>Personal Website</h3>
+                                <h3><strong>Stack: </strong>Laravel, Semantic</h3>
+                                <a href=""><i class="icon ion-link"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="item wordpress col-xs-12 col-sm-6 col-md-3">
+                    <div class="item-wrap">
+                       <a href="">
+                            <img class="img-responsive" src="//lorempixel.com/600/600">
+                            <div class="img-overlay">
+                                <h3><strong>Name: </strong>Personal Website</h3>
+                                <h3><strong>Stack: </strong>Laravel, Semantic</h3>
+                                <a href=""><i class="icon ion-link"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="item bootstrap col-xs-12 col-sm-6 col-md-3">
+                    <div class="item-wrap">
+                       <a href="">
+                            <img class="img-responsive" src="//lorempixel.com/600/600">
+                            <div class="img-overlay">
+                                <h3><strong>Name: </strong>Personal Website</h3>
+                                <h3><strong>Stack: </strong>Laravel, Semantic</h3>
+                                <a href=""><i class="icon ion-link"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="row">
+                <button class="btn-inv center-block m-divider">
+                <a href="">See All Works</a>
+                </button>
+            </div>
+        </div>
+           
+       
+   </section>
+   
+   <section id="service">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-12">    
+                   <div class="section-header text-center">
+                       <h1>My Services</h1>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h4 class="text-uppercase">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        Web Development
+                    </h4>
+                    <p>I can implement all your idea, and execute it parfectly</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h4 class="text-uppercase">
+                        <i class="fa fa-diamond" aria-hidden="true"></i>
+                        Web Design
+                    </h4>
+                    <p>I can desing using bootstrap</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h4 class="text-uppercase">
+                        <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                        Responsive
+                    </h4>
+                    <p>I can develop mobile first desing using bootstrap</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4">
+                    <h4 class="text-uppercase">
+                        <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                        psd to html
+                    </h4>
+                    <p>I can convert inch parfectly your PSD design into Code!</p>
+                </div>
+            </div>
+        </div>
        </div>
    </section>
     
@@ -241,6 +372,7 @@
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src="/js/typed.js"></script>
     <script src="/js/master.js"></script>
 </body>
