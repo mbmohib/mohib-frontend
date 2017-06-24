@@ -590,3 +590,27 @@ footer .up-arrow i {
 footer p {
     background: #292929;
 }
+
+
+/*----------------------------------------*/
+/* Responsive */
+/*----------------------------------------*/
+@media only screen and (max-width : 480px) {
+    .header-text {
+        height: 200px;
+    }
+    .header-button {
+        width: 220px;
+        margin: 0 auto;
+    }
+    .btn-grp {
+        float: none;
+    }
+    #header .btn-def {
+        float: none;
+        width: 200px;
+    }
+    #contact .icon-bg, .icon-bg {
+        margin-top: 5%;
+    }
+}
