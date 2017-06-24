@@ -90,10 +90,14 @@ section {
     content : '';
     display: block;
     border: 2px solid #4ea1d8;
-    width: 300px;
+    width: 100px;
     margin: 10px auto;
     margin-bottom: 50px;
+    transition: width .5s;
         
+}
+.section-header h1.js:after {
+    width: 300px;      
 }
 .m-divider {
     margin-top: 50px;
@@ -112,7 +116,7 @@ section {
 }
 .navbar-default {
      background-color: transparent; 
-     border-color: transparent; 
+     border-color: transparent;
 }
 nav {
     padding-top: 10px;
@@ -123,6 +127,19 @@ nav a {
     font-weight: 400;
     text-transform: uppercase;
 }
+/* Sticky Nav
+------------------------------- */
+.sticky .navbar-default {
+    background-color: #fff; 
+    border-color: #fff;
+    box-shadow: 0 2px 0px #eee;
+}
+.sticky nav a {
+    font-size: 130%;
+    color: #000 !important;
+    font-weight: 100;
+}
+
 .header-content {
     position: absolute;
     top: 50%;
@@ -423,13 +440,13 @@ width:110px;
     color: #fff;
 }
 .icon-bg {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 1px solid #e6e6e6;
     border-radius: 50%;
     text-align: center;
     margin-top: 40%;
-    padding-top: 10px;
+    padding-top: 7px;
     transition: background .5s;
 }
 .icon-bg i {
