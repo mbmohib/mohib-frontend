@@ -595,6 +595,8 @@ footer p {
 /*----------------------------------------*/
 /* Responsive */
 /*----------------------------------------*/
+
+/* Portraint Phones and Smaller */
 @media only screen and (max-width : 480px) {
     .header-text {
         height: 200px;
@@ -612,5 +614,29 @@ footer p {
     }
     #contact .icon-bg, .icon-bg {
         margin-top: 5%;
+    }
+}
+
+/* Landscape Phones and Portrait Tablets */
+@media only screen and (max-width : 767px) {
+    .header-text {
+        height: 180px;
+    }
+    #contact .icon-bg, .icon-bg {
+        margin-top: 5%;
+    }
+    .contact-form {
+        margin-top: 30px;
+    }
+}
+
+/* Landscape Tablets and Medium Desktop */
+@media only screen and (max-width : 1023px) {
+    .header-text {
+        height: 150px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
     }
 }
