@@ -95,13 +95,15 @@ $(document).ready(function() {
     var itemWrap = $('.item-wrap');
     
     itemWrap.on('mouseover', function() {
-        $(this).find('.img-overlay').addClass('animated zoomOutDown');
+        $(this).find('.img-overlay')
+            .removeClass('animated zoomIn')
+            .css('visibility', 'hidden');
     });
     
     itemWrap.on('mouseout', function() {
         $(this).find('.img-overlay')
-            .removeClass('animated zoomOutDown')
-            .addClass('animated zoomInUp');
+            .addClass('animated zoomIn')
+            .css('visibility', 'visible');
     });
 
     
