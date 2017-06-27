@@ -15,6 +15,36 @@ $(document).ready(function() {
         backDelay: 900,
     });
     
+    
+    
+    
+    
+/*----------------------------------------*/
+/* Nav to Select Menu */
+/*----------------------------------------*/    
+    // Create the dropdown base
+    $("<select />").appendTo("#portfolio-nav");
+
+    // Create default option "Go to..."
+    $("<option />", {
+       "selected": "selected",
+       "value"   : "",
+       "text"    : "Choose Option",
+    }).appendTo("#portfolio-nav select");
+
+    // Populate dropdown with menu items
+    $("#portfolio-nav a").each(function() {
+     var el = $(this);
+     $("<option />", {
+         "value"   : el.attr("data-filter"),
+         "text"    : el.text()
+     }).appendTo("#portfolio-nav select");
+    });
+    
+    
+    
+    
+    
 /*----------------------------------------*/
 /* Skills */
 /*----------------------------------------*/
@@ -24,6 +54,11 @@ $(document).ready(function() {
 			width:$(this).attr('data-percent')
 		}, 5000);
 	});
+    
+    
+    
+    
+    
     
 /*----------------------------------------*/
 /* Isotope */
@@ -43,10 +78,18 @@ $(document).ready(function() {
 
 
     // filter items on button click
-    $('#filters').on( 'click', 'button', function() {
+    $('#filters').on( 'click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
     });
+     
+    
+    
+    $('#portfolio-nav select').change(function() { 
+        var filterValue = $(this).val();
+        $container.isotope({ filter: filterValue });
+    });
+    
     
     //Toggle image overlay
     var itemWrap = $('.item-wrap');
@@ -61,11 +104,21 @@ $(document).ready(function() {
             .addClass('animated zoomInUp');
     });
 
+    
+    
+    
+    
+    
 /*----------------------------------------*/
 /* Initialize WOW */
 /*----------------------------------------*/
     
 new WOW().init();
+    
+    
+    
+    
+    
     
 /*----------------------------------------*/
 /* Sticky Nav */
@@ -82,14 +135,6 @@ new WOW().init();
     
     
     
-    $('.section-header').waypoint(function(direction) {
-        if(direction == 'down') {
-            $(this).addClass('js');
-        }
-        
-    }, {
-        offset : '80%'
-    });
     
     
 /*----------------------------------------*/
@@ -130,8 +175,12 @@ $('a[href*="#"]')
       }
     }
   });
-}); //Document ready function end
+    
+    
+    
+    
 
+}); //Document ready function end
 
 
 

@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!--CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Chivo|Lato" rel="stylesheet"> 
     
     <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
 
 
@@ -236,13 +237,13 @@
            
            <div class="row">
                 <div id="portfolio-nav">
-                    <div id="filters" class="button-group center-block">
-                      <button class="btn-def" data-filter="*">All</button>
-                      <button class="btn-def" data-filter=".laravel">Laravel</button>
-                      <button class="btn-def" data-filter=".wordpress">Wordpress</button>
-                      <button class="btn-def" data-filter=".bootstrap">Bootstrap</button>
-                      <button class="btn-def" data-filter=".laravel-Package">Laravel Package</button>
-                    </div>
+                    <ul id="filters" class="button-group">
+                        <li><a class="btn-def" data-filter="*">All</a></li>
+                        <li><a class="btn-def" data-filter=".laravel">Laravel</a></li>
+                        <li><a class="btn-def" data-filter=".wordpress">Wordpress</a></li>
+                        <li><a class="btn-def" data-filter=".bootstrap">Bootstrap</a></li>
+                        <li><a class="btn-def" data-filter=".laravel-Package">Laravel Package</a></li>
+                    </ul>
                 </div>
            </div>
         </div>
@@ -639,24 +640,22 @@
        </div>
    </section>
    
-   <footer class="wow fadeIn">
+   <footer>
       <div class="up-arrow">
           <a href="#header"><i class="icon ion-android-arrow-dropup-circle"></i></a>
       </div>
-       <p class="text-center">
+       <p class="text-center wow fadeIn">
            Copyright © 2017 All right reserved. Designed and developed by Me.
        </p>
    </footer>
     
     
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/master.js"></script>
