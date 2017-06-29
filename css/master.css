@@ -107,7 +107,7 @@ section {
 /* Header Section */
 /*----------------------------------------*/
 #header {
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(/images/header_bg-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(images/header_bg-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -224,7 +224,7 @@ nav a {
 /* Skill Section */
 /*----------------------------------------*/
 #skill {
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(/images/skill_bg-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(images/skill_bg-min.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -644,10 +644,20 @@ footer p {
     }
 }
 
+/* Medium Desktop */
+@media only screen and (max-width : 991px) {
+    #skill {
+        min-height: 688px;
+    }
+}
+
 /* Landscape Phones and Portrait Tablets */
 @media only screen and (max-width : 767px) {
     .header-text {
         height: 180px;
+    }
+    #skill {
+        min-height: 688px;
     }
     #portfolio-nav select {
         display: block;
@@ -678,6 +688,9 @@ footer p {
     #header .btn-def {
         float: none;
         width: 200px;
+    }
+    #skill {
+        min-height: 688px;
     }
     #portfolio-nav select {
         display: block;

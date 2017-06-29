@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/* Preloader */
+/*----------------------------------------*/
 paceOptions= {
     ajax : true,
     document : true,
@@ -7,6 +10,8 @@ paceOptions= {
 Pace.on('done', function() {
     $('#preloader').fadeOut();
 });
+
+
 
 
 $(document).ready(function() {
@@ -31,7 +36,7 @@ $(document).ready(function() {
     
     
 /*----------------------------------------*/
-/* Nav to Select Menu */
+/* Nav to Select Menu for Portfolio Nav*/
 /*----------------------------------------*/    
     // Create the dropdown base
     $("<select />").appendTo("#portfolio-nav");
