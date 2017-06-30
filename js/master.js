@@ -19,12 +19,8 @@ $(document).ready(function() {
 /*----------------------------------------*/
 /* Typewriter */
 /*----------------------------------------*/
-    $(".print").typed({
-        strings: [
-          "I am Mohib", 
-          "I am a Web Developer",
-          "I live in Dhaka, Bangladesh"
-        ],
+    $("#print").typed({
+        stringsElement: $('#print-text'),
         loop: true,
         typeSpeed: 0.6,
         showCursor: false,

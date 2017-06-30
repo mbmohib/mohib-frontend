@@ -149,12 +149,15 @@ nav a {
 .header-text {
     height: 60px;
 }
-.print {
-    text-align: center;
+#print {
+	text-align: center;
     font-size: 300%;
     color: #fff !important;
     text-transform: uppercase;
     font-weight: 100;
+}
+#print-text {
+	display: none;
 }
 .header-button {
     width: 400px;
