@@ -13,8 +13,8 @@ html {
     text-rendering: optimizeLegibility
 }
 
-body {
-/*    padding-top: 70px;*/
+body#blog {
+    padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +43,7 @@ section {
 /*----------------------------------------*/
 /* Reuseable Component */
 /*----------------------------------------*/
-.btn-def { 
+.btn-def {
     padding: 10px 15px;
     border: 1px solid #2980b9;
     font-family: 'Lato', sans-serif;
@@ -58,7 +58,7 @@ section {
     cursor: pointer;
     color : #fff;
 }
-.btn-inv { 
+.btn-inv {
     padding: 10px 15px;
     border: 1px solid #2980b9;
     font-family: 'Lato', sans-serif;
@@ -71,9 +71,9 @@ section {
     color : #fff;
 }
 .btn-inv:hover {
-    background: #236d9d;
+/*    background: #236d9d;*/
     cursor: pointer;
-    color : #fff;
+/*    color : #fff;*/
 }
 .btn-inv a {
     color: #fff;
@@ -93,11 +93,9 @@ section {
     width: 300px;
     margin: 10px auto;
     margin-bottom: 50px;
-    transition: width .5s;
-        
 }
 .section-header h1.js:after {
-    width: 300px;      
+    width: 300px;
 }
 .m-divider {
     margin-top: 50px;
@@ -115,8 +113,13 @@ section {
     position: relative;
 }
 .navbar-default {
-     background-color: transparent; 
+     background-color: transparent;
      border-color: transparent;
+}
+.navbar-brand {
+	font-family: 'Kaushan Script', cursive;
+	text-transform: capitalize;
+	font-size: 200%;
 }
 nav {
     padding-top: 10px;
@@ -130,13 +133,12 @@ nav a {
 /* Sticky Nav
 ------------------------------- */
 .sticky .navbar-default {
-    background-color: #fff; 
+    background-color: #fff;
     border-color: #fff;
     box-shadow: 0 2px 0px #eee;
 }
 .sticky nav a {
-    font-size: 130%;
-    color: #000 !important;
+    color: #575353 !important;
     font-weight: 100;
 }
 
@@ -198,7 +200,7 @@ nav a {
     font-size: 200%;
     color: #fff;
 }
-#header .btn-def { 
+#header .btn-def {
     width: 180px;
     float: left;
     padding: 20px 50px;
@@ -380,7 +382,7 @@ nav a {
    margin-right:0;
 }
 
-.item { 
+.item {
   border: none;
 }
 .item-wrap {
@@ -446,10 +448,10 @@ nav a {
        -o-transition-property:         top, left, opacity;
           transition-property:         transform, opacity;
 }
-  
+
 /*----------------------------------------*/
 /* Service Section */
-/*----------------------------------------*/ 
+/*----------------------------------------*/
 #service p {
     color: #7e7e7e;
 }
@@ -578,8 +580,8 @@ nav a {
 .social-item:hover .icon-bg i {
     color: #fff;
 }
-.contact-form input[type=text], 
-.contact-form input[type=email], 
+.contact-form input[type=text],
+.contact-form input[type=email],
 textarea {
     width: 100%;
     border: 1px solid #6ab0de;
@@ -592,8 +594,8 @@ textarea {
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-.contact-form input[type=text]:focus, 
-.contact-form input[type=email]:focus, 
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
 textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border : 1px solid rgba(81, 203, 238, 1);
@@ -621,7 +623,7 @@ footer .up-arrow {
     left: 50%;
     top : -20px;
     transform: translateX(-50%, -50%);
-    
+
 }
 footer .up-arrow i {
     font-size: 200%;
@@ -632,6 +634,185 @@ footer p {
 }
 
 
+/*----------------------------------------*/
+/* --------------Blog Page ---------------------------------------------------------*/
+/*----------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/* Header */
+/*----------------------------------------*/
+#blog-header {
+	margin-bottom: 50px;
+}
+#blog-header .navbar-default {
+     background-color: transparent;
+     border-color: transparent;
+}
+nav {
+    padding-top: 10px;
+}
+nav a {
+    font-size: 130%;
+    color: #fff !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* Sticky Nav
+------------------------------- */
+#blog-header .navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 2px 0px #eee;
+}
+#blog-header nav a {
+    color: #575353 !important;
+    font-weight: 100;
+}
+.bannar-heading h1 {
+	font-family: 'Kaushan Script', cursive;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+
+/*----------------------------------------*/
+/* Post */
+/*----------------------------------------*/
+.blog-post {
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+	border-bottom: 1px dotted #d8d8d8;
+}
+.post-image img {
+	width: 100%;
+	height: 380px;
+	border-radius: 30px;
+}
+.post-heading h3 {
+	font-weight: 200;
+	font-family: 'Lora', serif;
+}
+.post-meta p {
+	display: inline;
+	margin-right: 5%;
+	color: #4b4b4b;
+	font-size: 13px;
+	font-family: 'Lora', serif;
+}
+.post-meta p i {
+	margin-right: .5%;
+}
+.post-meta p span {
+	color: #333;
+}
+.post-content {
+	font-family: 'Lora', serif;
+	font-size: 140%;
+	line-height: 1.5em;
+	color: #333;
+	margin: 30px 0px 50px 0px;
+
+}
+.post-link a {
+	padding: 10px 35px;
+	border: 1px solid #2980b9;
+	border-radius: 20px;
+	color: #333;
+}
+.post-link a.post-socail-icon {
+	padding: 9px;
+	margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #2980b9;
+    display: inline-block;
+	vertical-align: middle;
+}
+.blog-pagination a {
+    color: #333 !important;
+}
+
+/*----------------------------------------*/
+/* Sidebar */
+/*----------------------------------------*/
+.blog-search {
+	border-bottom: 1px dotted #d8d8d8;
+}
+.blog-search input {
+	width: 90% !important;
+    border: none;
+	box-shadow: none;
+	margin-bottom: 5px;
+}
+.blog-search button {
+	width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+}
+.blog-search input:focus {
+    box-shadow: none;
+    border : none;
+}
+/* ---------- Taxonomy ------------- */
+.blog-taxonomy {
+	width: 70%;
+	margin: 30px auto;
+}
+.blog-taxonomy h4 {
+    font-family: 'Lora', serif;
+}
+.blog-taxonomy h4:after {
+    content : '';
+    display: block;
+    border: 1px dotted #d8d8d8;
+    width: 100px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}
+.blog-taxonomy ul {
+	
+}
+.blog-taxonomy ul li {
+	list-style: none;
+}
+.blog-taxonomy.tags ul li {
+	float: left;
+	margin-right: 5px;
+}
+.blog-taxonomy ul li a {
+	font-family: 'Lora', serif;
+	font-size: 120%;
+	color: #333;
+}
+.blog-taxonomy.tags ul li a {
+	font-size: 120%;
+}
+
+/* ---------- Popular Posts ------------- */
+.popular-posts {
+	width: 90%;
+	margin: 40px auto;
+}
+.popular-posts h4 {
+	margin-bottom: 20px;
+}
+.popular-posts h4:after {
+	content : '';
+    display: block;
+    border: 1px dotted #d8d8d8;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}
+.popular-posts img {
+	width: 60px;
+    height: 60px;
+	vertical-align: middle;
+}
 /*----------------------------------------*/
 /* Responsive */
 /*----------------------------------------*/
@@ -676,6 +857,8 @@ footer p {
     }
 }
 
+
+
 /* Portraint Phones and Smaller */
 @media only screen and (max-width : 480px) {
     .header-text {
@@ -705,6 +888,3 @@ footer p {
         margin-top: 5%;
     }
 }
-
-
-
