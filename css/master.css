@@ -738,6 +738,9 @@ nav a {
 /*----------------------------------------*/
 /* Sidebar */
 /*----------------------------------------*/
+aside {
+/*	position: static;*/
+}
 .blog-search {
 	border-bottom: 1px dotted #d8d8d8;
 }
